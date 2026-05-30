@@ -7,6 +7,14 @@
   --brand-focus-ring: #7a320033;
 }
 
+body {
+  background-image: url("images/bg.jpg");
+  background-size: cover; /* fill entire viewport */
+  background-position: center;
+  background-attachment: fixed; /* stay put during scroll */
+  background-repeat: no-repeat;
+}
+
 .site-header {
   background-color: var(--brand);
   min-height: 90px;
