@@ -27,14 +27,6 @@
   margin-bottom: 1.75rem;
 }
 
-/* Experience section */
-
-/* #experience > h2 {
-  border-bottom: 3px solid #7a3200;
-  padding-bottom: 0.4rem;
-  margin-bottom: 1.75rem;
-} */
-
 #experience h3 {
   font-size: 0.8rem;
   font-weight: 700;
@@ -75,6 +67,18 @@
 
 #workHistoryAccordion .accordion-body li + li {
   margin-top: 0.4rem;
+}
+
+/* Project cards */
+#projects .card {
+  display: flex;
+  flex-direction: column;
+}
+
+#projects .card .btn {
+  align-self: center;
+  padding: 0.5rem;
+  font-size: 0.875rem;
 }
 
 /* Technical Skills card */
