@@ -1,0 +1,21 @@
+.site-header {
+  background-color: #7a3200;
+  min-height: 90px;
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link:focus {
+  color: #ffd9b3 !important;
+}
+
+.site-header .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+@media (max-width: 767.98px) {
+  .site-header .navbar-collapse .navbar-nav {
+    gap: 0 !important;
+    align-items: flex-end;
+    padding: 0.5rem 0;
+  }
+}
