@@ -1,13 +1,17 @@
 :root {
-  --brand: #7a3200;
+  --brand: #7a3300eb;
   --brand-dark: #5a2500;
   --brand-light: #fff4ee;
   --brand-pale: #ffd9b3;
-  --brand-ink: #1a0a00;
+  --brand-background: #fff4eeb6;
+  --brand-ink: #1b0c01;
   --brand-focus-ring: #7a320033;
+  --heading-font: "Montserrat", sans-serif;
+  --body-font: "Open Sans", sans-serif;
 }
 
 body {
+  font-family: var(--body-font);
   background-image: url("images/bg.jpg");
   background-size: cover; /* fill entire viewport */
   background-position: center;
@@ -16,8 +20,10 @@ body {
 }
 
 .site-header {
+  font-family: var(--heading-font);
+  color: var(--brand-light);
   background-color: var(--brand);
-  min-height: 90px;
+  letter-spacing: 0.2em;
 }
 
 .site-header .nav-link:hover,
@@ -37,11 +43,11 @@ body {
   }
 }
 
-/* About section */
 .section-title {
+  font-family: var(--heading-font);
   border-bottom: 3px solid var(--brand);
   padding-bottom: 0.4rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 
 #experience h3 {
@@ -53,7 +59,7 @@ body {
   margin-bottom: 0.75rem;
 }
 
-/* Accordion – brand color active / hover / focus */
+/* Accordion*/
 #workHistoryAccordion .accordion-button {
   font-weight: 400;
   color: var(--brand-ink);
@@ -105,7 +111,9 @@ body {
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.25s ease, background-color 0.2s ease;
+  transition:
+    opacity 0.25s ease,
+    background-color 0.2s ease;
   z-index: 1000;
 }
 
@@ -124,25 +132,14 @@ body {
   flex-direction: column;
 }
 
+#projects .card h3 {
+  font-family: var(--heading-font);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
 #projects .card .btn {
   align-self: center;
   padding: 0.5rem;
   font-size: 0.875rem;
-}
-
-/* Technical Skills card */
-.skills-card {
-  background-color: var(--brand-light);
-  border-left: 4px solid var(--brand);
-  border-radius: 0.375rem;
-  padding: 1.25rem 1.5rem;
-}
-
-.skills-card ul {
-  padding-left: 1.25rem;
-  margin-bottom: 0;
-}
-
-.skills-card li + li {
-  margin-top: 0.5rem;
 }

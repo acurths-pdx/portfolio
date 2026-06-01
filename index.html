@@ -7,13 +7,16 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="bg-light">
-    <header class="site-header p-3 d-flex align-items-center">
+    <header class="site-header p-3 d-flex">
       <nav class="navbar navbar-expand-md w-100">
-        <h1 class="text-light fs-2 fw-semibold">Alicia Curths</h1>
+        <h1 class="text-light fs-2 fw-semibold m-0">Alicia Curths</h1>
         <button
           class="navbar-toggler"
           type="button"
@@ -54,37 +57,40 @@
       <section id="about" class="py-4">
         <h2 class="section-title">About Me</h2>
 
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <p>
-              Hi, I'm Alicia Curths, a computer science undergraduate student
-              based in Portland, Oregon. I have a passion for science,
-              technology, and innovation, and am eager to apply my skills and
-              knowledge to real-world challenges. Before turning to software, I
-              spent 13 years as a radiologic technologist and mammographer. The
-              career taught me how to work both independently and as part of
-              multidisciplinary care teams, perform quality control on complex
-              equipment, safeguard sensitive information under HIPAA, and think
-              clearly under pressure in high-stakes situations. It also taught
-              me how to communicate technical concepts in plain language; a
-              skill I find just as valuable in code reviews and documentation as
-              it is at the clinic. I bring that same attention to detail,
-              reliability, and collaborative mindset to my work in computer
-              science. I'm especially drawn to problems where careful
-              engineering meets real human impact, and I'm excited to grow as an
-              engineer who delivers software that's thoughtfully built,
-              inclusive, and dependable.
-            </p>
-          </div>
-          <div class="col-md-4 text-center">
-            <figure class="mb-0">
-              <img
-                src="images/alicia.jpg"
-                alt="headshot of alicia curths"
-                width="140"
-                height="170"
-              />
-            </figure>
+        <div class="card about-card p-3 shadow">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <p>
+                Hi, I'm Alicia Curths, a computer science undergraduate student
+                based in Portland, Oregon. I have a passion for science,
+                technology, and innovation, and am eager to apply my skills and
+                knowledge to real-world challenges. Before turning to software,
+                I spent 13 years as a radiologic technologist and mammographer.
+                The career taught me how to work both independently and as part
+                of multidisciplinary care teams, perform quality control on
+                complex equipment, safeguard sensitive information under HIPAA,
+                and think clearly under pressure in high-stakes situations. It
+                also taught me how to communicate technical concepts in plain
+                language; a skill I find just as valuable in code reviews and
+                documentation as it is at the clinic. I bring that same
+                attention to detail, reliability, and collaborative mindset to
+                my work in computer science. I'm especially drawn to problems
+                where careful engineering meets real human impact, and I'm
+                excited to grow as an engineer who delivers software that's
+                thoughtfully built, inclusive, and dependable.
+              </p>
+            </div>
+            <div class="col-md-4 text-center">
+              <figure class="mb-0">
+                <img
+                  src="images/alicia.jpg"
+                  alt="headshot of alicia curths"
+                  width="140"
+                  height="170"
+                  class="rounded"
+                />
+              </figure>
+            </div>
           </div>
         </div>
       </section>
@@ -94,18 +100,15 @@
         <div class="row">
           <div class="col-lg-8">
             <h3>Work History</h3>
-            <div
-              class="accordion accordion-flush mb-3"
-              id="workHistoryAccordion"
-            >
+            <div class="accordion mb-3 shadow" id="workHistoryAccordion">
               <div class="accordion-item">
                 <h4 class="accordion-header">
                   <button
-                    class="accordion-button collapsed"
+                    class="accordion-button"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#job-kaiser"
-                    aria-expanded="false"
+                    aria-expanded="true"
                     aria-controls="job-kaiser"
                   >
                     Mammographer | Kaiser Permanente (2018 – present)
@@ -113,7 +116,7 @@
                 </h4>
                 <div
                   id="job-kaiser"
-                  class="accordion-collapse collapse"
+                  class="accordion-collapse collapse show"
                   data-bs-parent="#workHistoryAccordion"
                 >
                   <div class="accordion-body">
@@ -218,16 +221,27 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="skills-card">
-              <h3>Technical Skills</h3>
-              <ul>
-                <li>Languages: Python, C, C++, and Java</li>
-                <li>
-                  Tools &amp; Technologies: Git/GitHub, PostgreSQL, Visual
-                  Studio Code, Linux, Docker
-                </li>
-              </ul>
-            </div>
+            <h3>Technical Skills</h3>
+            <ul class="list-group shadow">
+              <li class="list-group-item">
+                <b>Languages:</b> Python, C, C++, and Java
+              </li>
+              <li class="list-group-item">
+                <b>Tools &amp; Technologies:</b> Git/GitHub, PostgreSQL, Visual
+                Studio Code, Linux, Bash, Microsoft, Docker, Google Cloud
+                Platform and AWS
+              </li>
+              <li class="list-group-item">
+                <b>Concepts:</b> Object-Oriented Programming, Data Structures,
+                Algorithms, Software Development Lifecycle, RESTful APIs, and
+                Cloud Computing
+              </li>
+              <li class="list-group-item">
+                <b>Courses:</b> Machine Learning, Web & Cloud Security, Intro to
+                Web Development, Algorithms & Complexity, System Programming and
+                Architecture, Intro to Operating Systems.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -236,7 +250,7 @@
         <h2 class="section-title">Projects</h2>
         <div class="row g-4">
           <div class="col-md-6">
-            <div class="card h-100 p-3">
+            <div class="card h-100 p-3 shadow">
               <h3>BSU Tool</h3>
               <p>
                 Collaborated with a team of undergraduate student to build a
@@ -246,7 +260,7 @@
               </p>
               <a
                 href="https://github.com/bsu-tool/bsu-tool"
-                class="btn btn-primary"
+                class="btn btn-primary mt-auto"
                 target="_blank"
                 rel="noopener noreferrer"
                 >BSU Tool on GitHub</a
@@ -254,7 +268,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="card h-100 p-3">
+            <div class="card h-100 p-3 shadow">
               <h3>Reddit Sentiment Analyzer</h3>
               <p>
                 Real-time Reddit sentiment analysis pipeline implemented with
@@ -265,7 +279,7 @@
               </p>
               <a
                 href="https://github.com/AliciaCurths/reddit-sent"
-                class="btn btn-primary btn-sm mt-auto"
+                class="btn btn-primary mt-auto"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Reddit Sentiment on GitHub</a
@@ -284,10 +298,10 @@
       </section>
     </main>
 
-    <footer class="container py-3">
+    <footer class="footer container py-3 text-center">
       <p>Alicia Curths - Portfolio (2026)</p>
     </footer>
-    <button id="back-to-top" aria-label="Back to top" title="Back to top">
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
       ↑
     </button>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
