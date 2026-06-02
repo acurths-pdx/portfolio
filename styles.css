@@ -108,6 +108,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 8px; /* visually center the arrow */
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
