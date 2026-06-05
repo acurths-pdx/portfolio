@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,7 +18,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="bg-light">
-    <header class="site-header p-3 d-flex">
+    <header class="site-header container-fluid p-3 d-flex">
       <nav class="navbar navbar-expand-md w-100">
         <a
           class="text-light fs-2 fw-semibold m-0 text-decoration-none"
@@ -94,6 +95,7 @@
                     type="text"
                     class="form-control"
                     id="name"
+                    name="name"
                     placeholder="Your name"
                     required
                   />
@@ -104,6 +106,7 @@
                     type="email"
                     class="form-control"
                     id="email"
+                    name="email"
                     placeholder="your@email.com"
                     required
                   />
@@ -113,6 +116,7 @@
                   <textarea
                     class="form-control"
                     id="message"
+                    name="message"
                     rows="5"
                     placeholder="What's on your mind?"
                     required
@@ -128,7 +132,7 @@
       </section>
     </main>
 
-    <footer class="footer container py-3 text-center">
+    <footer class="footer container-fluid py-3 text-center">
       <p>Alicia Curths - Portfolio (2026)</p>
     </footer>
     <button

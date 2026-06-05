@@ -115,7 +115,7 @@ body {
 }
 
 /* Back to top button */
-#back-to-top {
+.back-to-top {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
@@ -139,12 +139,12 @@ body {
   z-index: 1000;
 }
 
-#back-to-top.visible {
+.back-to-top.visible {
   opacity: 1;
   pointer-events: auto;
 }
 
-#back-to-top:hover {
+.back-to-top:hover {
   background-color: var(--brand-dark);
 }
 
