@@ -1,9 +1,8 @@
 :root {
-  --brand: #7a3300eb;
+  --brand: #7a3200;
   --brand-dark: #5a2500;
   --brand-light: #fff4ee;
   --brand-pale: #ffd9b3;
-  --brand-background: #fff4eeb6;
   --brand-ink: #1b0c01;
   --brand-focus-ring: #7a320033;
   --heading-font: "Montserrat", sans-serif;
@@ -58,7 +57,7 @@ body {
   min-height: 1.5em;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .hero .text1,
   .hero .text3 {
     font-size: 1rem;
@@ -150,11 +149,6 @@ body {
 }
 
 /* Project cards */
-#projects .card {
-  display: flex;
-  flex-direction: column;
-}
-
 #projects .card h3 {
   font-family: var(--heading-font);
   font-size: 1.25rem;
