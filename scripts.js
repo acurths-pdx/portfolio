@@ -19,21 +19,25 @@ function typeWriterEffect(element, text, i = 0) {
   }
   setTimeout(() => typeWriterEffect(element, text, i + 1), typingSpeed);
 }
-typeWriterEffect(div1, text);
-// Delay the start of each line based on the length of the previous lines and the typing speed
-setTimeout(
-  () => typeWriterEffect(div2, text2),
-  text.length * typingSpeed + delayBetweenLines,
-);
-setTimeout(
-  () => typeWriterEffect(div3, text3),
-  (text.length + text2.length) * typingSpeed + 2 * delayBetweenLines,
-);
-setTimeout(
-  () => typeWriterEffect(div4, text4),
-  (text.length + text2.length + text3.length) * typingSpeed +
-    3 * delayBetweenLines,
-);
+
+// Check if the first div exists before starting the typewriter effect
+if (div1) {
+  typeWriterEffect(div1, text);
+  // Delay the start of each line based on the length of the previous lines and the typing speed
+  setTimeout(
+    () => typeWriterEffect(div2, text2),
+    text.length * typingSpeed + delayBetweenLines,
+  );
+  setTimeout(
+    () => typeWriterEffect(div3, text3),
+    (text.length + text2.length) * typingSpeed + 2 * delayBetweenLines,
+  );
+  setTimeout(
+    () => typeWriterEffect(div4, text4),
+    (text.length + text2.length + text3.length) * typingSpeed +
+      3 * delayBetweenLines,
+  );
+}
 
 // ------ Back to top button ------
 const backToTopBtn = document.getElementById("back-to-top");
