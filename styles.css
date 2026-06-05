@@ -80,7 +80,7 @@ body {
   margin-bottom: 0.75rem;
 }
 
-/* Accordion*/
+/* Accordion */
 #workHistoryAccordion .accordion-button {
   font-weight: 400;
   color: var(--brand-ink);
@@ -129,7 +129,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 8px; /* visually center the arrow */
+  padding-bottom: 0.5rem; /* visually center the arrow */
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
