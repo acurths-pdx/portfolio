@@ -162,6 +162,10 @@ body {
 }
 
 /* Carousel controls */
+#sentimentCarousel .carousel-item img {
+  height: auto;
+}
+
 #sentimentCarousel .carousel-control-prev,
 #sentimentCarousel .carousel-control-next {
   filter: invert(1);
