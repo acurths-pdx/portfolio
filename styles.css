@@ -164,7 +164,10 @@ body {
 /* Carousel controls */
 #sentimentCarousel .carousel-control-prev,
 #sentimentCarousel .carousel-control-next {
-  opacity: 1;
+  filter: invert(1);
+}
+
+#sentimentCarousel .carousel-indicators button {
   filter: invert(1);
 }
 
