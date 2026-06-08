@@ -52,10 +52,15 @@ const backToTopBtn = document.getElementById("back-to-top");
 // Show the button when the user scrolls down 300px, hide it otherwise
 if (backToTopBtn) {
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-      backToTopBtn.classList.add("visible");
+    const isVisible = window.scrollY > 300;
+    backToTopBtn.classList.toggle("visible", isVisible);
+
+    // Ensure button is only exposed to screen readers when visible
+    backToTopBtn.setAttribute("aria-hidden", String(!isVisible));
+    if (isVisible) {
+      backToTopBtn.tabIndex = 0;
     } else {
-      backToTopBtn.classList.remove("visible");
+      backToTopBtn.tabIndex = -1;
     }
   });
 
